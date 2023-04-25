@@ -1,0 +1,10 @@
+candidateList : [
+    {
+        candidateId: 
+        vote: ?
+    },
+    {
+        candidateId: 
+        vote: ?
+    }
+]
