@@ -11,6 +11,8 @@ const addelection = catchAsync(async (req, res, next) => {
 
     const candidates = req.body.candidates
 
+    console.log(candidates)
+
     const data1 = await addResult(data._id, candidates)
 
     return res.status(201).json({ data, data1 })

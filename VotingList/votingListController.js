@@ -10,7 +10,7 @@ const checkIfExists = async (userId, electionId) => {
 
     console.log(data)
 
-    if (!data) return false
+    if (data === null || data === undefined || data === [] || data === {}) return false
 
     return true
 }

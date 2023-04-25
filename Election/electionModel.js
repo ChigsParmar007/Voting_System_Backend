@@ -3,8 +3,7 @@ const mongoose = require('mongoose')
 const schema = new mongoose.Schema({
     electionFor: {
         type: String,
-        required: true,
-        unique: true
+        required: true
     },
     descrption: {
         type: String,

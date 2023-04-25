@@ -4,15 +4,13 @@ const schema = new mongoose.Schema({
     electionId: {
         type: mongoose.Types.ObjectId,
         ref: 'election',
-        required: true,
-        unique: true
+        required: true
     },
     candidates: [
         {
             userId: {
                 type: mongoose.Types.ObjectId,
                 required: true,
-                unique: true
             },
             votes: {
                 type: Number,
